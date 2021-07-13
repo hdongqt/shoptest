@@ -4,7 +4,7 @@ var $$ = document.querySelectorAll.bind(document);
 const listProduct = $('.home-product .grid__row');
 console.log(listProduct)
 
-var jsonApi = 'https://reqres.in/api/users?delay=0';
+var jsonApi = 'https://reqres.in/api/users?delay=2';
 fetch(jsonApi)
     .then(data => data.json())
     .then((product) => {
