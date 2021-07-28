@@ -9,7 +9,6 @@ fetch(jsonApi)
     .then(data => data.json())
     .then((product) => {
         let temp = product.data;
-        // var blockElement = document.querySelector("#test");
        let html=temp.map(item=>{
         return `<div class="col l-2-4 m-4 c-6">
         <a class="home-product-item">
