@@ -1,7 +1,7 @@
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
 
-const listProduct = $('.home-product .home-product-list');
+const listProduct = $('.home-product .grid__row');
 console.log(listProduct)
 
 var jsonApi = 'https://reqres.in/api/users?delay=3';

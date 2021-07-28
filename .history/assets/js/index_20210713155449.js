@@ -1,17 +1,17 @@
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
 
-const listProduct = $('.home-product .home-product-list');
+const listProduct = $('.home-product .grid__row');
 console.log(listProduct)
 
-var jsonApi = 'https://reqres.in/api/users?delay=3';
+var jsonApi = 'https://reqres.in/api/users?delay=0';
 fetch(jsonApi)
     .then(data => data.json())
     .then((product) => {
         let temp = product.data;
         // var blockElement = document.querySelector("#test");
        let html=temp.map(item=>{
-        return `<div class="col l-2-4 m-4 c-6">
+        return `<div class="grid__column-2-4">
         <a class="home-product-item">
             <div class="home-product-item_img"
                 style="background-image: url(${item.avatar});">
